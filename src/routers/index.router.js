@@ -1,7 +1,4 @@
-`use strict`
-
 import { Router } from 'express'
-// --- Import controllers ---
 
 var router = Router()
 
@@ -12,7 +9,7 @@ const initRouter = () => {
     return router
 }
 
-// --- Functions ---
+// --- Handlers ---
 const sayHello = (req, res) => {
     res.send('Hello world')
 }
