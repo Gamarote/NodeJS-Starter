@@ -1,5 +1,3 @@
-`use strict`
-
 import 'babel-polyfill'
 import express from 'express'
 import cors from 'cors'
@@ -20,6 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use('/', indexRouter)
 // --------------
 
-app.listen(app.get('PORT'), ()=>{
-    console.log(`Express server listening on port ${app.get('PORT')}`)
+app.listen(app.get('PORT'), () => {
+    /* eslint no-console: "off" */
+    console.log(`Express server listening on port ${ app.get('PORT') }`)
 })
